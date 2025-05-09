@@ -1,0 +1,43 @@
+@media screen and (max-width: 990px) {
+  .app .main-img::after,
+  .about .main-img::after,
+  .app .main-img::before,
+  .about .main-img::before {
+    content: none !important;
+  }
+
+  .layer h2 {
+    width: 90%;
+    font-size: 50px !important;
+  }
+
+  .about .main-img img,
+  .app .main-img img {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .about h3,
+  .discover h1,
+  .feedback .title h2,
+  .app h3 {
+    font-size: 35px;
+  }
+
+  .owl-carousel .owl-item img {
+    width: 80px;
+    margin: auto;
+  }
+
+  .owl-carousel .owl-item {
+    text-align: center;
+  }
+
+  .owl-carousel .owl-item h3 {
+    margin-top: 30px;
+  }
+
+  .app .apple {
+    margin-bottom: 20px;
+  }
+}

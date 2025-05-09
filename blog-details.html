@@ -1,0 +1,427 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasty api</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemon&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Satisfy&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media-query.css" />
+  </head>
+
+  <body class="">
+    <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="imgs/logo.png" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars text-white fs-3"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link text-white fs-6 fw-bold"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-6 fw-bold" href="about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-6 fw-bold" href="recipes.html"
+                >Recipes</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-white dropdown-toggle main_dropdown fw-bold fs-6 position-relative"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Blog
+              </a>
+              <ul class="dropdown-menu">
+                <li class="p-1">
+                  <a class="dropdown-item" href="blog.html">Blog</a>
+                </li>
+                <li class="p-1">
+                  <a class="dropdown-item" href="blog-details.html"
+                    >Single blog</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                class="nav-link text-white fs-6 fw-bold"
+                href="recipes-details.html"
+                >Recipes details</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white fs-6 fw-bold" href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              id="input-search"
+            />
+            <button class="btn btn-outline-light" type="submit" id="btn-search">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="about_header text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <div class="container">
+        <h3>recipe details</h3>
+      </div>
+    </section>
+
+    <section class="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="single_posts"></div>
+            <div class="quote-wrapper">
+              <div class="quotes">
+                MCSE boot camps have its supporters and its detractors. Some
+                people do not understand why you should have to spend money on
+                boot camp when you can get the MCSE study materials yourself at
+                a fraction of the camp price. However, who has the willpower to
+                actually sit through a self-imposed MCSE training.
+              </div>
+            </div>
+            <div class="row social_div">
+              <div class="col-md-8">
+                <p class="card-text">
+                  <i class="fa-solid fa-heart me-2"></i> Lily and 4 people like
+                  this
+                </p>
+              </div>
+              <div class="col-md-4">
+                <ul
+                  class="social d-flex list-unstyled p-0 justify-content-end column-gap-4"
+                >
+                  <a href="">
+                    <li><i class="fa-brands fa-facebook-f"></i></li>
+                  </a>
+                  <a href="">
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                  </a>
+                  <a href="">
+                    <li><i class="fa-brands fa-dribbble"></i></li>
+                  </a>
+                  <a href="">
+                    <li><i class="fa-brands fa-behance"></i></li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 prev"></div>
+              <div class="col-md-6 next"></div>
+            </div>
+            <div class="author_div">
+              <div class="author">
+                <div class="d-flex">
+                  <div class="flex-shrink-0">
+                    <img src="imgs/author.png" alt="..." />
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a href="#" class="text-decoration-none"
+                      ><h6>Harvard milan</h6></a
+                    >
+                    <p>
+                      Second divided from form fish beast made. Every of seas
+                      all gathered use saying you're, he our dominion twon
+                      Second divided from
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="comments">
+              <h4 class="comments_count"></h4>
+              <div class="comments_div"></div>
+            </div>
+            <div class="comment_form">
+              <h4 class="form_title">Leave a comment</h4>
+              <form>
+                <textarea
+                  class="form-control comment_input"
+                  rows="5"
+                  placeholder="Write comment"
+                ></textarea>
+                <div class="row">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      class="form-control name_input"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      class="form-control email_input"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="url"
+                      placeholder="Website"
+                      class="form-control website_input"
+                    />
+                  </div>
+                </div>
+                <button type="submit" class="text-uppercase send_button">
+                  Send message
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="side">
+              <form class="search">
+                <div class="position-relative">
+                  <input
+                    type="text"
+                    placeholder="Search keyword"
+                    class="form-control"
+                  />
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <button type="submit" class="text-uppercase">Search</button>
+              </form>
+            </div>
+            <div class="side">
+              <div class="title">
+                <h3>Category</h3>
+              </div>
+              <ul class="list-unstyled p-0">
+                <a href=""><li>Restaurant food (37)</li></a>
+                <a href=""><li>Travel news (10)</li></a>
+                <a href=""><li>Modern technology (-3)</li></a>
+                <a href=""><li>Product (11)</li></a>
+                <a href=""><li>Inspiration 21</li></a>
+                <a href=""><li>Health Care (21)09</li></a>
+              </ul>
+            </div>
+            <div class="side">
+              <div class="title">
+                <h3>Recent Post</h3>
+              </div>
+              <div class="latest"></div>
+            </div>
+            <div class="side">
+              <div class="title">
+                <h3>Tag clouds</h3>
+              </div>
+              <div class="d-flex flex-wrap column-gap-2">
+                <span class="tag">Project</span>
+                <span class="tag">Love</span>
+                <span class="tag">Technology</span>
+                <span class="tag">Travel</span>
+                <span class="tag">Resaurant</span>
+                <span class="tag">Life style</span>
+                <span class="tag">Design</span>
+                <span class="tag">illustration</span>
+              </div>
+            </div>
+            <div class="side">
+              <div class="title">
+                <h3>Instagram Feeds</h3>
+              </div>
+              <div class="row photos">
+                <div class="col-md-4 mb-3">
+                  <img src="imgs/post_6.png" class="w-100" />
+                </div>
+                <div class="col-md-4 mb-3">
+                  <img src="imgs/post_5.png" class="w-100" />
+                </div>
+                <div class="col-md-4 mb-3">
+                  <img src="imgs/post_7.png" class="w-100" />
+                </div>
+                <div class="col-md-4 mb-3">
+                  <img src="imgs/post_8.png" class="w-100" />
+                </div>
+                <div class="col-md-4 mb-3">
+                  <img src="imgs/post_9.png" class="w-100" />
+                </div>
+                <div class="col-md-4 mb-3">
+                  <img src="imgs/post_10.png" class="w-100" />
+                </div>
+              </div>
+            </div>
+            <div class="side">
+              <div class="title">
+                <h3>Newsletter</h3>
+              </div>
+              <form class="search">
+                <div class="position-relative">
+                  <input
+                    type="email"
+                    placeholder="Enter email"
+                    class="form-control"
+                  />
+                </div>
+                <button type="submit" class="text-uppercase">subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-6">
+            <h2 class="title text-white text-capitalize">Top Products</h2>
+            <ul class="list-unstyled p-0 links">
+              <a href="" class="text-decoration-none"
+                ><li>Managed Website</li></a
+              >
+              <a href="" class="text-decoration-none"
+                ><li>Manage Reputation</li></a
+              >
+              <a href="" class="text-decoration-none"><li>Power tool</li></a>
+              <a href="" class="text-decoration-none"
+                ><li>Marketing Service</li></a
+              >
+            </ul>
+          </div>
+          <div class="col-md-2 col-6">
+            <h2 class="title text-white text-capitalize">Quick links</h2>
+            <ul class="list-unstyled p-0 links">
+              <a href="" class="text-decoration-none"><li>Jobs</li></a>
+              <a href="" class="text-decoration-none"><li>Brand Assets</li></a>
+              <a href="" class="text-decoration-none"
+                ><li>Investor Relations</li></a
+              >
+              <a href="" class="text-decoration-none"
+                ><li>Terms of Service</li></a
+              >
+            </ul>
+          </div>
+          <div class="col-md-2 col-6">
+            <h2 class="title text-white text-capitalize">Features</h2>
+            <ul class="list-unstyled p-0 links">
+              <a href="" class="text-decoration-none"><li>Jobs</li></a>
+              <a href="" class="text-decoration-none"><li>Brand Assets</li></a>
+              <a href="" class="text-decoration-none"
+                ><li>Investor Relations</li></a
+              >
+              <a href="" class="text-decoration-none"
+                ><li>Terms of Service</li></a
+              >
+            </ul>
+          </div>
+          <div class="col-md-2 col-6">
+            <h2 class="title text-white text-capitalize">Resources</h2>
+            <ul class="list-unstyled p-0 links">
+              <a href="" class="text-decoration-none"><li>Guides</li></a>
+              <a href="" class="text-decoration-none"><li>Research</li></a>
+              <a href="" class="text-decoration-none"><li>Experts</li></a>
+              <a href="" class="text-decoration-none"><li>Agencies</li></a>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h2 class="title text-white text-capitalize">Subscribe</h2>
+            <p class="desc">You can trust us. we only send promo offers,</p>
+            <form>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="form-control"
+              />
+              <button class="" type="submit">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-8">
+            <p>
+              Copyright ©2025 All rights reserved | This template is made with
+              by
+              <a
+                href="https://www.linkedin.com/in/noha-emad-b86449173/"
+                target="_blank"
+                >Noha</a
+              >
+            </p>
+          </div>
+          <div class="col-md-4">
+            <ul
+              class="social d-flex list-unstyled p-0 justify-content-end column-gap-2"
+            >
+              <a href="">
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+              </a>
+              <a href="">
+                <li><i class="fa-brands fa-twitter"></i></li>
+              </a>
+              <a href="">
+                <li><i class="fa-brands fa-dribbble"></i></li>
+              </a>
+              <a href="">
+                <li><i class="fa-brands fa-behance"></i></li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/general.js"></script>
+    <script src="js/single_blog.js"></script>
+  </body>
+</html>

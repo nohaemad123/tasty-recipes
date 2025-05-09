@@ -1,0 +1,386 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasty api</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemon&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Satisfy&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media-query.css" />
+  </head>
+
+  <body class="">
+    <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="imgs/logo.png" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars text-white fs-3"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link text-white fs-6 fw-bold"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-6 fw-bold" href="about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-6 fw-bold" href="recipes.html"
+                >Recipes</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-white dropdown-toggle main_dropdown fw-bold fs-6 position-relative"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Blog
+              </a>
+              <ul class="dropdown-menu">
+                <li class="p-1">
+                  <a class="dropdown-item" href="blog.html">Blog</a>
+                </li>
+                <li class="p-1">
+                  <a class="dropdown-item" href="blog-details.html"
+                    >Single blog</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a
+                class="nav-link text-white fs-6 fw-bold"
+                href="recipes-details.html"
+                >Recipes details</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white fs-6 fw-bold" href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              id="input-search"
+            />
+            <button class="btn btn-outline-light" type="submit" id="btn-search">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="about_header text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <div class="container">
+        <h3>recipe details</h3>
+      </div>
+    </section>
+
+    <section class="recipe_details">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-6">
+            <img src="imgs/recepie_details.png" class="w-100" />
+          </div>
+          <div class="col-md-6">
+            <div class="ms-5">
+              <h4>Dragon tiger phoenix</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation.
+              </p>
+              <div class="details">
+                <div class="d-flex mb-2">
+                  <h5 class="w-25 mb-0">Rating:</h5>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <div class="d-flex mb-2">
+                  <h5 class="w-25">time:</h5>
+                  <h5 class="">30 Mins</h5>
+                </div>
+                <div class="d-flex mb-2">
+                  <h5 class="w-25">Category:</h5>
+                  <h5>Main Dish</h5>
+                </div>
+                <div class="d-flex mb-2">
+                  <h5 class="w-25">Tags:</h5>
+                  <h5>Dinner, Main, Chicken, Dragon, Phoenix</h5>
+                </div>
+                <ul class="list-unstyled d-flex social column-gap-3 mt-3">
+                  <a href=""
+                    ><li><i class="fa-brands fa-facebook-f"></i></li
+                  ></a>
+                  <a href=""
+                    ><li><i class="fa-brands fa-twitter"></i></li
+                  ></a>
+                  <a href=""
+                    ><li><i class="fa-brands fa-linkedin-in"></i></li
+                  ></a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit.
+        </p>
+        <p class="mb-4">
+          Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint occaecat cupidatat non proident, sunt in culpa qui officia
+          deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis
+          iste natus error sit voluptatem accusantium doloremque laudantium,
+          totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+          quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+          voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+          consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+          consectetur, adipisci velit, sed quia non numquam eius modi tempora
+          incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit. Voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum. Sed ut
+          perspiciatis unde omnis iste natus error sit voluptatem accusantium
+          doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+          inventore veritatis et quasi architecto beatae vitae dicta sunt
+          explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+          odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+          voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
+          quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+          eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+          voluptatem.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-5 categories">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="text-center category">
+              <img
+                src="imgs/peachbasilpizza6c7de.jpg"
+                alt="pizza1"
+                class="rounded-circle my-5 img-pizza"
+              />
+              <h4>Pizza</h4>
+              <p>Appetizer</p>
+              <p>Time Needs: 30 Mins</p>
+              <button
+                class="btn btn-outline-warning rounded-pill"
+                id="btn-pizza"
+              >
+                View Full Recipe
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center category">
+              <img
+                src="imgs/5566512470_9e98939ab3_z2766.jpg"
+                alt="pasta"
+                class="rounded-circle my-5 img-pizza"
+              />
+              <h4>Pasta</h4>
+              <p>Appetizer</p>
+              <p>Time Needs: 30 Mins</p>
+              <button
+                class="btn btn-outline-warning rounded-pill"
+                id="btn-pasta"
+              >
+                View Full Recipe
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center category">
+              <img
+                src="imgs/Esquites2B2528Mexican2BCorn2BSalad25292B5002B5917bbd1c44e.jpg"
+                alt="corn"
+                class="rounded-circle my-5 img-pizza"
+              />
+              <h4>Corn</h4>
+              <p>Appetizer</p>
+              <p>Time Needs: 30 Mins</p>
+              <button
+                class="btn btn-outline-warning rounded-pill"
+                id="btn-corn"
+              >
+                View Full Recipe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-6">
+            <h2 class="title text-white text-capitalize">Top Products</h2>
+            <ul class="list-unstyled p-0 links">
+              <a href="" class="text-decoration-none"
+                ><li>Managed Website</li></a
+              >
+              <a href="" class="text-decoration-none"
+                ><li>Manage Reputation</li></a
+              >
+              <a href="" class="text-decoration-none"><li>Power tool</li></a>
+              <a href="" class="text-decoration-none"
+                ><li>Marketing Service</li></a
+              >
+            </ul>
+          </div>
+          <div class="col-md-2 col-6">
+            <h2 class="title text-white text-capitalize">Quick links</h2>
+            <ul class="list-unstyled p-0 links">
+              <a href="" class="text-decoration-none"><li>Jobs</li></a>
+              <a href="" class="text-decoration-none"><li>Brand Assets</li></a>
+              <a href="" class="text-decoration-none"
+                ><li>Investor Relations</li></a
+              >
+              <a href="" class="text-decoration-none"
+                ><li>Terms of Service</li></a
+              >
+            </ul>
+          </div>
+          <div class="col-md-2 col-6">
+            <h2 class="title text-white text-capitalize">Features</h2>
+            <ul class="list-unstyled p-0 links">
+              <a href="" class="text-decoration-none"><li>Jobs</li></a>
+              <a href="" class="text-decoration-none"><li>Brand Assets</li></a>
+              <a href="" class="text-decoration-none"
+                ><li>Investor Relations</li></a
+              >
+              <a href="" class="text-decoration-none"
+                ><li>Terms of Service</li></a
+              >
+            </ul>
+          </div>
+          <div class="col-md-2 col-6">
+            <h2 class="title text-white text-capitalize">Resources</h2>
+            <ul class="list-unstyled p-0 links">
+              <a href="" class="text-decoration-none"><li>Guides</li></a>
+              <a href="" class="text-decoration-none"><li>Research</li></a>
+              <a href="" class="text-decoration-none"><li>Experts</li></a>
+              <a href="" class="text-decoration-none"><li>Agencies</li></a>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h2 class="title text-white text-capitalize">Subscribe</h2>
+            <p class="desc">You can trust us. we only send promo offers,</p>
+            <form>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="form-control"
+              />
+              <button class="" type="submit">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-8">
+            <p>
+              Copyright ©2025 All rights reserved | This template is made with
+              by
+              <a
+                href="https://www.linkedin.com/in/noha-emad-b86449173/"
+                target="_blank"
+                >Noha</a
+              >
+            </p>
+          </div>
+          <div class="col-md-4">
+            <ul
+              class="social d-flex list-unstyled p-0 justify-content-end column-gap-2"
+            >
+              <a href="">
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+              </a>
+              <a href="">
+                <li><i class="fa-brands fa-twitter"></i></li>
+              </a>
+              <a href="">
+                <li><i class="fa-brands fa-dribbble"></i></li>
+              </a>
+              <a href="">
+                <li><i class="fa-brands fa-behance"></i></li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/general.js"></script>
+    <script src="js/single_blog.js"></script>
+  </body>
+</html>
