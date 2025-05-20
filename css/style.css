@@ -4,7 +4,7 @@
 }
 
 .navbar-scrolled {
-  background-color: rgba(0, 0, 0) !important; 
+  background-color: rgba(0, 0, 0) !important;
 }
 
 .navbar-scrolled .nav-link {
@@ -124,9 +124,23 @@ header {
   height: 250px;
 }
 
+.recipes_section .card:hover {
+  background-color: var(--default_value);
+}
+
 .recipes_section .card {
   margin-top: 40%;
   margin-bottom: 20%;
+  transition: all 1s ease-in-out;
+}
+
+.recipes_section .card:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.recipes_section .card:hover .card-text {
+  color: white;
 }
 
 .recipes_section .card .card-title {
@@ -134,6 +148,11 @@ header {
   font-family: var(--default_font_family);
   font-size: 30px;
   font-weight: 400;
+}
+
+.recipes_section .card:hover a {
+  border: 1px solid white;
+  color: white;
 }
 
 .discover {
@@ -362,6 +381,11 @@ footer ul.social a {
   margin-right: 7px;
   color: #767676;
   line-height: 40px !important;
+}
+
+footer ul.social a:hover {
+  background-color: var(--default_value);
+  color: white;
 }
 
 .about_header {

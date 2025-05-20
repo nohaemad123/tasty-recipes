@@ -63,3 +63,4 @@ btnSearch.addEventListener("click", function (e) {
   e.preventDefault();
   fetchData(inputSearch.value);
 });
+
